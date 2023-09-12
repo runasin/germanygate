@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@100&family=Josefin+Sans:wght@500&family=Train+One&display=swap');
+
+*{
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	border: none;
+	outline:none;
+	scroll-behavior: smooth;
+	
+	
+}
+
+:root{
+	
+	--background: #BDBDBD;
+	--hover:#FFF1EB;
+	--text-color: #000000;
+	--main-color: #A47266;
+}
+
+body{
+	background:url(images/Background.png);
+}
+
+
+.menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 250px;
+	background: #ffff;
+	z-index: 100;
+	transition: all 0.5s ease;
+}
+
+
+#navbar {
+	background: rgb(255, 255, 255);
+	width: 190px;
+	float: center;
+	margin-top: 90px;
+	font-family: 'Montserrat';
+	padding-left: 40px;
+}
+
+
+#navbar li {
+	list-style-type: none;
+}
+
+#navbar ul li a{
+	color: black;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 55px;
+    display: block;
+    padding: 0px 20px;
+    transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+}
+
+#accordian>ul>li.active>a{
+	color: black;
+	background-color: transparent;
+	transition: all 0.7s;
+}
+
+
+#accordian a:not(:only-child):after {
+	
+	position: absolute;
+	right: 20px;
+	top: 10%;
+	font-size: 140px;
+	font-family: "Font Awesome 5 Free";
+	display: inline-block;
+	padding-right: 3px;
+	vertical-align: middle;
+	font-weight: 900;
+	transition: 0.5s;
+}
+
+
+.selector-active{
+	width: 100%;
+	display:inline-block;
+	position:absolute;
+	height: 37px;
+	top: 0px;
+	left: 0px;
+	transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	background-color: white;
+	border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.logo{
+	font-family: 'Train One', cursive;
+	text-align: center;
+	font-size: 24px;
+	margin-top: 40px;
+	
+}
+
+.logo-img{
+	width: 150px;
+	margin-left: 18%;
+	margin-top: 20px;
+}
+
+.wp-img{
+	width: 200px;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+
+.social-media a{
+	background: transparent;
+	justify-content:center;
+	width: 2rem;
+	height: 4rem;
+	border-radius:50%;
+	border: .2rem solid var(--background);
+	color: var(--text-color);
+	transition: transform 0.1s ease-in-out;
+	
+	font-size:1.3rem;
+	padding: 3px;
+	
+}
+
+.social-media a:hover{
+	background: var(--main-color);
+	color: var(--second-bg-color);
+	box-shadow: 0 0 1rem var(--main-color);
+	font-size: 3rem;
+	transform: scale(1.5);
+   
+}
+
+
